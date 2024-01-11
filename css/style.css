@@ -1,0 +1,801 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter&family=Martel:wght@700&family=Open+Sans:ital@1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    font-size: 17px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1,h2,h3,h4{
+    font-family: 'Martel', serif; ;
+}
+/* ========================MAIN Styling================= */
+
+/* ======NAVBAR========= */
+@media screen and (max-width:997px) {
+    .navbar-collapse button{
+   display: none;
+    }
+    header ul li a{
+        line-height: 2;
+    }
+  }
+  header{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 5px gray;
+    background-color: #fff;
+    z-index: 999;
+    color: black;
+  }
+  
+.btn-light{
+    background-color: #6D1931;
+    color: #fff;
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 5px;
+}
+.btn-light:hover{
+    background-color: #6D1931;
+    color: #fff;
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 5px;
+}
+
+.navbar-collapse li a:hover{
+color:#6D1931;
+font-weight: bold;
+border-bottom: 3px solid #6D1931;
+}
+ ul li:nth-of-type(1) .activ{
+    color: #6D1931 !important;
+    border-bottom: 3px solid #6D1931 !important;
+}
+
+/* ======HERO========= */
+#hero{
+    background-color: #FFF9F2;
+    justify-content: center;
+    align-items: center;
+}
+#hero button{
+    background-color: #6D1931;
+    color: #fff;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+}
+
+    #hero p .rate{
+       color: #c2bbbb;
+       font-size: 15px;
+    }
+
+    #hero h1
+   {
+        font-family: 'Martel', serif;
+     }
+     @media(min-width:800px){
+        #hero .hero_text{
+            position: relative;
+            top:  10px;
+        }
+     }
+
+@media(max-width:700px) {
+    #hero{
+       
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    #hero p button{
+        background-color: #6D1931;
+        color: #fff;
+        padding: 1em;
+        border: none;
+        border-radius: 5px;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    #hero .hero_text{
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+        align-items: center;
+    
+
+    }
+  
+    #hero .hero_text p:nth-of-type(2){
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+     }
+     
+    #hero .hero_path{
+
+padding-top: 150px;
+    }
+}
+/* ====== END HERO========= */
+
+/* ====== CLIENTS & PARTNERS========= */
+#client{
+    width: 80%;
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+#client img{
+border-bottom: 2px solid gray;
+padding-bottom: 20px;
+
+}
+/* ========POWER CAPTURE======== */
+#power{
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    width: 100%;
+}
+
+@media(min-width:900px){
+    .capture{
+    padding-top: 50px;
+    line-height: 1.10;  
+    max-width: 80%;
+    margin: 0 auto;
+}
+}
+
+@media(max-width:767px)
+{
+   .container .cap{
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+
+}
+#power{
+    justify-content: center;
+    align-items: center;  
+    
+}
+}
+#power p:nth-of-type(1),
+#power .capture h3{
+    font-family: 'Martel', serif;
+ }
+ /*=========== INTRODUCTION=========== */
+ #Neff{
+    background-color: #FFF9F2 ;
+    width: 100%;
+ }
+
+ #intro .btn{
+    background-color: #FFF9F2;
+    color: black;
+    padding: 1em 2em;
+    font-weight: bold;
+ }
+
+
+ @media screen and (min-width:800px) {
+    #intro .cap{
+      display: grid;
+      grid-template-columns:repeat(2, 1fr);
+         }
+         #intro{
+            background-color:#15394D;
+            width: 100%;
+            color: #ffff;
+            justify-content: center;
+            align-items: center;
+           width: 90%;
+           margin: 0 auto;
+           border-radius: 10px;
+           height: 40vh;
+        
+         }
+         #intro img{
+            height: 600px;
+          position: relative;
+          bottom:80px;
+         }
+
+         #intro p{
+            font-size: 20px;
+     
+            
+        }
+    .introducing{     
+        padding: 50px;
+        }
+ }
+ @media screen and (max-width:800px) {
+
+         #intro{
+            background-color:#15394D;
+            width: 100%;
+            color: #ffff;
+            justify-content: center;
+            align-items: center;
+           text-align: center;
+          height: 70vh;
+          padding-top: 70px;
+          
+        
+         }
+         #intro img{
+          
+      width: 80%;
+      margin: 0 auto;
+
+        
+         }
+      
+      
+ 
+
+         .introducing{     
+            padding: 10px;
+          }
+          #intro .container .cap{
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+        }
+    #hr hr{
+display: none;
+        }
+         
+ .joi{
+   position: relative;
+   bottom: 100px;
+ 
+
+
+ }
+
+
+ }
+
+ @media(max-width:768px){
+    #best{
+        background-color: #FFF9F2 ;
+        position: relative;
+        z-index: 1;
+      bottom: 150px;
+     }
+}   
+
+
+ 
+ /* ===========================BEST OFFER STYLE=========================== */
+
+ 
+ #best h2,#best h3{
+    font-family: 'Martel', serif;
+    font-weight: bold;
+
+ }
+@media screen and (min-width:800px){
+    .features .top{
+     
+    padding-top: 100px;
+    
+     }
+ }
+ .features{
+    background-color: #fff;
+    /* padding: 100px; */
+    margin: 50px;
+    border-radius: 10px;
+    border-top:4px solid #6D1931;
+    border-right:4px solid #6D1931;
+    position: relative;
+    z-index: 1;
+
+
+ }
+ .features h3{
+    font-family: 'Martel', serif;
+    font-weight: bold;
+
+ }
+ .handhome{
+    padding-top: 70px;
+    justify-content: space-around;
+   
+ }
+ /* joininn_ */
+
+ .join{
+    margin: 60px;
+    justify-content: space-between;
+ }
+
+ .joining{
+    background-color: #fff;
+    border-radius: 10px;
+    border-top:4px solid #6D1931;
+    border-right:4px solid #6D1931;
+
+ }
+
+ .joining h3{
+    font-family: 'Martel', serif;
+    font-weight:bolder;
+    padding-top: 20px;
+    width: 70%;
+ }
+
+ /*============immersive============== */
+ #immersive{
+    background-color:#15394D;
+            width: 100%;
+            color: #ffff;
+
+ }
+ @media screen and (max-width:990px) {
+    #immersive img{
+        max-width: 100%;
+    
+     }
+
+     #immersive .tex{
+        text-align: center;
+     }
+ }
+ #immersive .btn{
+    background-color: #FFF9F2;
+    color: black;
+    padding: 1em 2em;
+    font-weight: bold; 
+ }
+ /* ====easy===== */
+ #easy{
+    margin: 100px;
+ }
+ .card-easy{
+    padding: 10px;
+ }
+ #easy p button{
+    background-color: #6D1931;
+    color: #fff;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#easy .card{
+    box-shadow: 0 0 1px gray;
+    border: 2px solid gray;
+}
+@media screen and (max-width:550px) {
+    #easy{
+
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    
+}
+
+/* =========subscribe========= */
+#subscribe{
+    background-color:#6D1931;
+    color: #fff;
+    width: 100%;
+    margin-top: 100px;
+  
+}
+#subscribe button{
+    background-color: #FFF9F2;
+    color:#6D1931;
+    padding: 0.4em 2em;
+    border: none;
+    border-radius: 5px;
+}
+@media screen and (max-width:500px) {
+    .sub{
+     
+        margin-left: 30px;
+      
+    }
+}
+@media screen and (max-width:990px) {
+
+    #subscribe button{
+        background-color:#FFF9F2;
+        color:#6D1931;
+        padding: 0.4em 2em;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+}
+
+
+
+
+
+/* ========================ABOUT STYLING============================ */
+#aboutHero{
+    width: 100%;
+    background-color:#15394D ;
+    color: #fff;
+    justify-content: center;
+        align-items: center;
+        padding: 60px;
+    
+}
+#aboutHero h1{
+    font-family: 'Martel', serif;
+    
+}
+@media screen and (min-width:791px) {
+    #aboutHero .reach{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+
+
+    }
+
+    #aboutHero img{
+        position: relative;
+        left:300px
+        
+            }
+}
+@media screen and (max-width:900px) {
+    #aboutHero img{
+display:none ;
+
+    }
+
+}
+#about_best{
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    margin:0 auto;
+    padding: 30px;
+
+} 
+
+@media screen and (max-width:992px) {
+    #immersive .cap{
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+    
+    }
+ 
+    
+}
+@media screen and (min-width:960px) {
+    #immersive .get{
+        position: relative;
+        top: 100px;
+    }
+    #story .our{
+        position: relative;
+        top: 100px;
+    }
+    
+}
+
+/*=========== INTRODUCTION=========== */
+#Neff{
+    background-color: #FFF9F2 ;
+    width: 100%;
+ }
+
+ #intro1 .btn{
+    background-color: #FFF9F2;
+    color: black;
+    padding: 1em 2em;
+    font-weight: bold;
+ }
+ .mission{
+    background-color:#15394D;
+    color: #ffff;
+    justify-content: center;
+    align-items: center;
+   width: 90%;
+   padding: 0 auto;
+   border-radius: 10px;
+   height: 300px;
+
+ }
+ #intro1 img{
+   height:450px;
+position: relative;
+bottom: 60px;
+ }
+ @media screen and (min-width:1200px) {
+    .mission{
+        background-color:#15394D;
+        color: #ffff;
+        justify-content: center;
+        align-items: center;
+       width: 90%;
+       margin: 0 auto;
+       border-radius: 10px;
+       
+    
+     }
+     #intro1 img{
+        height:450px;
+     position: relative;
+     bottom: 60px;
+     left: 100px;
+      }
+ }
+
+    .mission .introduction{
+        position: relative;
+        top: 70px;
+        }
+
+ @media screen and (max-width:768px) {
+   
+ 
+    .mission .cap{
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+    }
+
+    .mission .introduction{
+    position: relative;
+    top: 50px;
+    }
+    #intro1,
+    .mission{
+        background-color:#15394D;
+        color: #ffff;
+       height: 500px;
+text-align:center;
+font-size: 12px;
+     }
+     .mission img{
+      position: relative;
+      top: 100px;
+      margin: 0 auto;
+     }
+     #hr hr{
+        display: none;
+                } 
+                 
+                #about_bestt{
+                    justify-content: center;
+                    align-items: center;
+                    width:90%;
+                    margin:0 auto;
+                    background-color:#FFF9F2 ;
+                    position: relative;
+                    z-index: 1;
+                    padding-bottom: 20px;
+                
+                } 
+                #about_bestt h2,#about_bestt p{
+                position:relative;
+                top: 40px;
+                }
+        .introducing{     
+            padding: 10px;
+          }
+ }
+
+
+/* =============CONTACT============= */
+#contactHero{
+    width: 100%;
+    background-color:#15394D ;
+    color: #fff;
+    justify-content: center;
+        align-items: center;
+        padding: 60px;
+    
+}
+@media screen and (min-width:791px) {
+    #contactHero .reach{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+
+
+    }
+
+    #contactHero img{
+        position: relative;
+        left:300px
+        
+            }
+}
+@media screen and (max-width:900px) {
+    #contactHero img{
+display:none ;
+
+    }
+   
+
+}
+@media screen and (max-width:600px) {
+    #contact img{
+display:none ;
+
+    }
+   
+
+}
+form .for{
+    padding: 1em 2em; 
+    background-color: #6D1931;
+    color: #fff;
+     margin:20px 
+}
+
+.gam{
+text-align: center;
+}
+.gam h3{
+    color:#6D1931 ;
+}
+/* ===================subscrib=================== */
+#subscrib{
+    background-color:#6D1931;
+    color: #fff;
+    width: 100%;
+  
+}
+#subscrib button{
+    background-color: #FFF9F2;
+    color:#6D1931;
+    padding: 0.4em 2em;
+    border: none;
+    border-radius: 5px;
+}
+@media screen and (max-width:500px) {
+    .sub{
+     
+        margin-left: 30px;
+      
+    }
+}
+@media screen and (max-width:990px) {
+
+    #subscrib button{
+        background-color: #FFF9F2;
+        color:#6D1931;
+        padding: 0.4em 2em;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+}
+/*============= DOWNLOAD============= */
+#downloadHero h1{
+
+    font-family: 'Martel', serif;
+}
+#downloadHero{
+    width: 100%;
+    background-color:#15394D ;
+    color: #fff;
+    justify-content: center;
+        align-items: center;
+        padding: 60px;
+    
+}
+@media screen and (min-width:791px) {
+    #downloadHero .reach{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+
+
+    }
+
+    #downloadHero img{
+        position: relative;
+        left:300px
+        
+            }
+}
+@media screen and (max-width:900px) {
+    #downloadHero img{
+display:none ;
+
+    }
+
+}
+/* marker */
+@media screen and (min-width:600px) {
+    #marker{
+            width: 90%;
+            background-color:#15394D ;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            border-radius: 10px;   
+   
+    }
+}
+@media screen and (max-width:600px) {
+    #marker{
+        width: 100%;
+        background-color:#15394D ;
+        color: #fff;
+        justify-content: center;
+         align-items: center;
+    
+        border-radius: none;
+   
+    }
+
+}
+#down_best{
+    justify-content: center;
+    align-items: center;
+    width:70%;
+    margin:50px auto;
+
+} 
+/* ===============BLOG=================== */
+#blogHero{
+    width: 100%;
+    background-color:#15394D ;
+    color: #fff;
+    justify-content: center;
+        align-items: center;
+        padding: 60px;
+    
+}
+#blogHero h1{
+    font-family: 'Martel', serif;
+    
+}
+#blog h2{
+margin-left: 100px; 
+    color: #6D1931;
+}
+@media screen and (min-width:791px) {
+    #blogHero .reach{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+#blog h2{
+    margin-left: 50px; 
+        color: #6D1931;
+    }
+
+ 
+
+    #blogHero img{
+        position: relative;
+        left:300px
+        
+            }
+}
+@media screen and (max-width:900px) {
+    #blogHero img{
+display:none ;
+
+    }
+
+}
